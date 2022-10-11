@@ -2,11 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../core/methods.dart';
 import '../../generated/assets.dart';
+import 'onboarding_screen.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -42,21 +49,11 @@ class SplashScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'nectar',
-                      style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                            color: Colors.white,
-                        fontSize: 38.sp,
-                        fontWeight: FontWeight.bold,
-                          ),
-                    ),
+                    Text('nectar',
+                        style: Theme.of(context).textTheme.headlineMedium),
                     Text(
                       'online groceriet',
-                      style: Theme.of(context).textTheme.caption!.copyWith(
-                        fontSize: 13.sp,
-                        letterSpacing: 1.4.sp,
-                        color: Colors.white,
-                      ),
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -64,6 +61,18 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(
+      const Duration(seconds: 5),
+      () => navigateToAndFinish(
+        widget: const OnBoardingScreen(),
+        context: context,
       ),
     );
   }
