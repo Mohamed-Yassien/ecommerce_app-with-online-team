@@ -17,7 +17,7 @@ class ReusableAuthColumn extends StatelessWidget {
           style: Theme.of(context).textTheme.titleLarge,
         ),
         SizedBox(
-          height: 10.sp,
+          height: 7.sp,
         ),
         Text(
           subtitle,

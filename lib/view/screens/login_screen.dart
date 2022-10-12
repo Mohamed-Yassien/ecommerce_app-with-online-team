@@ -1,5 +1,7 @@
+import 'package:ecomm_with_team/core/methods.dart';
 import 'package:ecomm_with_team/core/responsive/ui_components/info_widget.dart';
 import 'package:ecomm_with_team/view/components/login_screen_header.dart';
+import 'package:ecomm_with_team/view/screens/sign_up_screen.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_column.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_row.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_button.dart';
@@ -75,7 +77,12 @@ class LoginScreen extends StatelessWidget {
                       ReusableAuthRow(
                         title: 'Don\'t have an account ?',
                         subtitle: 'SignUp',
-                        subtitlePress: () {},
+                        subtitlePress: () {
+                          navigateTo(
+                            widget: const SignUpScreen(),
+                            context: context,
+                          );
+                        },
                       ),
                     ],
                   ),
