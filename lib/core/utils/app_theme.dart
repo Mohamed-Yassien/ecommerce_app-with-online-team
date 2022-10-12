@@ -4,12 +4,13 @@ import 'package:sizer/sizer.dart';
 
 class AppTheme {
   static ThemeData appLightTheme = ThemeData(
+    primarySwatch: Colors.green,
     scaffoldBackgroundColor: const Color(0xffFCFCFC),
     appBarTheme: const AppBarTheme(
-      backgroundColor: Color(0xffFCFCFC),
+      backgroundColor: Colors.transparent,
       elevation: 0,
       systemOverlayStyle: SystemUiOverlayStyle(
-        statusBarColor: Color(0xffFCFCFC),
+        statusBarColor: Colors.transparent,
         statusBarBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark,
       ),
@@ -18,12 +19,12 @@ class AppTheme {
       bodyLarge: TextStyle(
         fontSize: 22.sp,
         fontWeight: FontWeight.bold,
-        color: const Color(0xff030303),
+        color:  Colors.black87,
       ),
       bodyMedium: TextStyle(
         fontSize: 20.sp,
         fontWeight: FontWeight.bold,
-        color: const Color(0xff030303),
+        color:  Colors.black87,
       ),
       headlineMedium: TextStyle(
         color: Colors.white,
@@ -31,10 +32,20 @@ class AppTheme {
         fontWeight: FontWeight.bold,
       ),
       bodySmall: TextStyle(
-        fontSize: 13.sp,
-        letterSpacing: 1.4.sp,
-        color: Colors.white,
+        fontSize: 12.sp,
+       color: const Color(0xff181725),
+        fontWeight: FontWeight.w600,
       ),
+      titleLarge: TextStyle(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.bold,
+        color: Colors.black87,
+      ),
+      titleMedium:   TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.grey[500],
+    ),
     ),
   );
 }

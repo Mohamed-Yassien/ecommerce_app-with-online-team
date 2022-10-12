@@ -2,7 +2,9 @@
 class Assets {
   Assets._();
 
+  static const String imagesGroup = 'assets/images/Group.png';
   static const String imagesGroupG = 'assets/images/group_g.png';
+  static const String imagesHeaderImg = 'assets/images/header_img.png';
   static const String imagesSplash = 'assets/images/splash.png';
   static const String imagesUserBackground = 'assets/images/user_background.png';
 

@@ -52,8 +52,11 @@ class _SplashScreenState extends State<SplashScreen> {
                     Text('nectar',
                         style: Theme.of(context).textTheme.headlineMedium),
                     Text(
-                      'online groceriet',
-                      style: Theme.of(context).textTheme.bodySmall,
+                      'online groceries',
+                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                        letterSpacing: 1.4.sp,
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),

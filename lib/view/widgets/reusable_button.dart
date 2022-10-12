@@ -15,22 +15,18 @@ class ReusableButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width * .8,
-      child: OutlinedButton(
+      width: width * .9,
+      child: MaterialButton(
         onPressed: press,
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
-            const Color(0xff53B175),
-          ),
-          shape: MaterialStateProperty.all(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15),
-            ),
-          ),
+        elevation: 0,
+        color: const Color(0xff53B175),
+        shape: RoundedRectangleBorder(
+          side: BorderSide.none,
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(
-            vertical: 20.0,
+            vertical: 16.0,
           ),
           child: Text(
             text,
