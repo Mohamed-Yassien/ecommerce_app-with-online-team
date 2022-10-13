@@ -17,7 +17,7 @@ class ShopScreenStack extends StatelessWidget {
       child: InfoWidget(
         builder: (context, infoLocal) {
           return ClipRRect(
-            borderRadius: BorderRadius.circular(5),
+            borderRadius: BorderRadius.circular(10),
             child: Stack(
               children: [
                 Image.asset(

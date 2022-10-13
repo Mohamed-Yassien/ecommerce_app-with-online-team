@@ -1,9 +1,11 @@
 import 'package:ecomm_with_team/core/utils/app_theme.dart';
 import 'package:ecomm_with_team/view/layouts/app_layout.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
 
 main() {
+
   runApp(const MyApp());
 }
 

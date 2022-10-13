@@ -1,4 +1,4 @@
-import 'package:ecomm_with_team/view/screens/login_screen.dart';
+import 'package:ecomm_with_team/view/screens/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/methods.dart';

@@ -1,12 +1,13 @@
+import 'package:ecomm_with_team/core/methods.dart';
 import 'package:ecomm_with_team/core/responsive/ui_components/info_widget.dart';
 import 'package:ecomm_with_team/view/components/shop_screen_header.dart';
 import 'package:ecomm_with_team/view/components/shop_screen_stack.dart';
+import 'package:ecomm_with_team/view/screens/product_details_screen.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_choose_type_card.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_product_item.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_row_for_see_all.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_search_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../generated/assets.dart';
@@ -16,12 +17,6 @@ class ShopScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarBrightness: Brightness.dark, // status bar color
-      ),
-    );
     return InfoWidget(
       builder: (context, info) {
         return Scaffold(
@@ -66,6 +61,11 @@ class ShopScreen extends StatelessWidget {
                           return ReusableProductItem(
                             info: info,
                             image: Assets.imagesBanana,
+                            onItemPress: () {
+                              navigateTo(
+                                  widget: const ProductDetailsScreen(),
+                                  context: context);
+                            },
                           );
                         },
                         itemCount: 10,
@@ -95,6 +95,11 @@ class ShopScreen extends StatelessWidget {
                           return ReusableProductItem(
                             info: info,
                             image: Assets.imagesFilfil,
+                            onItemPress: () {
+                              navigateTo(
+                                  widget: const ProductDetailsScreen(),
+                                  context: context);
+                            },
                           );
                         },
                         itemCount: 10,
@@ -152,6 +157,11 @@ class ShopScreen extends StatelessWidget {
                           return ReusableProductItem(
                             info: info,
                             image: Assets.imagesMeat,
+                            onItemPress: () {
+                              navigateTo(
+                                  widget: const ProductDetailsScreen(),
+                                  context: context);
+                            },
                           );
                         },
                         itemCount: 10,

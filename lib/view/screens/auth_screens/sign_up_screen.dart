@@ -2,7 +2,7 @@ import 'package:ecomm_with_team/core/methods.dart';
 import 'package:ecomm_with_team/core/responsive/ui_components/info_widget.dart';
 import 'package:ecomm_with_team/view/components/login_screen_header.dart';
 import 'package:ecomm_with_team/view/components/sign_up_agreement.dart';
-import 'package:ecomm_with_team/view/screens/login_screen.dart';
+import 'package:ecomm_with_team/view/screens/auth_screens/login_screen.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_column.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_row.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_button.dart';

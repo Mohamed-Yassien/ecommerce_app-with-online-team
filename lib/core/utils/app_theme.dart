@@ -46,7 +46,7 @@ class AppTheme {
         fontWeight: FontWeight.w500,
         color: Colors.black87,
       ),
-      titleSmall: TextStyle(
+      titleSmall:const TextStyle(
         color: Colors.green,
         fontSize: 14,
       ),

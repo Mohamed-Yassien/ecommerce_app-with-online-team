@@ -2,14 +2,14 @@ import 'package:ecomm_with_team/core/methods.dart';
 import 'package:ecomm_with_team/core/responsive/ui_components/info_widget.dart';
 import 'package:ecomm_with_team/view/components/login_screen_header.dart';
 import 'package:ecomm_with_team/view/layouts/app_layout.dart';
-import 'package:ecomm_with_team/view/screens/sign_up_screen.dart';
+import 'package:ecomm_with_team/view/screens/auth_screens/sign_up_screen.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_column.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_row.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_button.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import '../widgets/reusable_text_form.dart';
+import '../../widgets/reusable_text_form.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);

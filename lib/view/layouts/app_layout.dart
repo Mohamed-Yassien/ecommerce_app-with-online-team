@@ -1,6 +1,7 @@
 import 'package:ecomm_with_team/controller/cubits/layout_cubit/layout_cubit.dart';
 import 'package:ecomm_with_team/controller/cubits/layout_cubit/layout_states.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppLayout extends StatelessWidget {
@@ -8,6 +9,13 @@ class AppLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarBrightness: Brightness.dark, //
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
     return BlocProvider<LayoutCubit>(
       create: (context) => LayoutCubit(),
       child: BlocBuilder<LayoutCubit, LayoutStates>(

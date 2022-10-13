@@ -3,6 +3,8 @@ import 'package:sizer/sizer.dart';
 
 import '../../generated/assets.dart';
 
+
+
 class ShopScreenHeader extends StatelessWidget {
   const ShopScreenHeader({Key? key}) : super(key: key);
 
