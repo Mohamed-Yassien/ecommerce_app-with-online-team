@@ -44,7 +44,11 @@ class AppTheme {
       titleMedium: TextStyle(
         fontSize: 12.sp,
         fontWeight: FontWeight.w500,
-        color: Colors.grey[500],
+        color: Colors.black87,
+      ),
+      titleSmall: TextStyle(
+        color: Colors.green,
+        fontSize: 14,
       ),
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
