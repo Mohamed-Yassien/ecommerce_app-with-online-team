@@ -13,58 +13,61 @@ class ShopScreenStack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: info.screenHeight * .15,
+      height: info.screenHeight * .17,
       child: InfoWidget(
         builder: (context, infoLocal) {
-          return Stack(
-            children: [
-              Image.asset(
-                Assets.imagesRectangle,
-                height: info.localHeight,
-                fit: BoxFit.cover,
-              ),
-              Image.asset(
-                Assets.imagesFruits,
-              ),
-              Positioned(
-                bottom: 0,
-                right: 0,
-                child: Image.asset(
-                  Assets.imagesGreen,
+          return ClipRRect(
+            borderRadius: BorderRadius.circular(5),
+            child: Stack(
+              children: [
+                Image.asset(
+                  Assets.imagesRectangle,
+                  height: info.localHeight,
+                  fit: BoxFit.cover,
                 ),
-              ),
-              Positioned(
-                top: 0,
-                right: 0,
-                child: Image.asset(
-                  Assets.imagesTom,
+                Image.asset(
+                  Assets.imagesFruits,
                 ),
-              ),
-              Positioned(
-                top: infoLocal.localHeight * .4,
-                left: infoLocal.screenWidth * .4,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Fresh Vegetables',
-                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                            color: Colors.black54,
-                            fontSize: 18,
-                          ),
-                    ),
-                    SizedBox(height: .3.h),
-                    Text(
-                      'Get Up To 40% OFF',
-                      style: Theme.of(context).textTheme.caption!.copyWith(
-                            color: Colors.green,
-                            fontSize: 12,
-                          ),
-                    ),
-                  ],
+                Positioned(
+                  bottom: 0,
+                  right: 0,
+                  child: Image.asset(
+                    Assets.imagesGreen,
+                  ),
                 ),
-              ),
-            ],
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Image.asset(
+                    Assets.imagesTom,
+                  ),
+                ),
+                Positioned(
+                  top: infoLocal.localHeight * .4,
+                  left: infoLocal.screenWidth * .4,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Fresh Vegetables',
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                              color: Colors.black54,
+                              fontSize: 18,
+                            ),
+                      ),
+                      SizedBox(height: .3.h),
+                      Text(
+                        'Get Up To 40% OFF',
+                        style: Theme.of(context).textTheme.caption!.copyWith(
+                              color: Colors.green,
+                              fontSize: 12,
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           );
         },
       ),
