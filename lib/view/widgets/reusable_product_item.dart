@@ -5,9 +5,10 @@ import 'package:sizer/sizer.dart';
 import '../../generated/assets.dart';
 
 class ReusableProductItem extends StatelessWidget {
-  const ReusableProductItem({Key? key, required this.info}) : super(key: key);
+  const ReusableProductItem({Key? key, required this.info, required this.image}) : super(key: key);
 
   final DeviceInfo info;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +35,7 @@ class ReusableProductItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              Assets.imagesBanana,
+             image,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
