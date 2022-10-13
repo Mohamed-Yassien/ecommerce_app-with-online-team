@@ -2,10 +2,14 @@
 class Assets {
   Assets._();
 
+  static const String imagesFruits = 'assets/images/fruits.png';
+  static const String imagesGreen = 'assets/images/green.png';
   static const String imagesGroup = 'assets/images/Group.png';
   static const String imagesGroupG = 'assets/images/group_g.png';
   static const String imagesHeaderImg = 'assets/images/header_img.png';
+  static const String imagesRectangle = 'assets/images/Rectangle.png';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String imagesTom = 'assets/images/tom.png';
   static const String imagesUserBackground = 'assets/images/user_background.png';
 
 }

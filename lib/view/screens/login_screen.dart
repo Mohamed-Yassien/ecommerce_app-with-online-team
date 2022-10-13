@@ -1,6 +1,7 @@
 import 'package:ecomm_with_team/core/methods.dart';
 import 'package:ecomm_with_team/core/responsive/ui_components/info_widget.dart';
 import 'package:ecomm_with_team/view/components/login_screen_header.dart';
+import 'package:ecomm_with_team/view/layouts/app_layout.dart';
 import 'package:ecomm_with_team/view/screens/sign_up_screen.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_column.dart';
 import 'package:ecomm_with_team/view/widgets/reusable_auth_row.dart';
@@ -69,7 +70,12 @@ class LoginScreen extends StatelessWidget {
                       ReusableButton(
                         width: info.screenWidth,
                         text: 'Login',
-                        press: () {},
+                        press: () {
+                          navigateToAndFinish(
+                            widget: const AppLayout(),
+                            context: context,
+                          );
+                        },
                       ),
                       SizedBox(
                         height: 15.sp,

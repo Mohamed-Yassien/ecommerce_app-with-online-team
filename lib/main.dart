@@ -1,10 +1,10 @@
 import 'package:ecomm_with_team/core/utils/app_theme.dart';
-import 'package:ecomm_with_team/view/screens/splash_screen.dart';
+import 'package:ecomm_with_team/view/layouts/app_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.appLightTheme,
-          home: const SplashScreen(),
+          home: const AppLayout(),
         );
       },
     );
